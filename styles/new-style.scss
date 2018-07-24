@@ -1,0 +1,68 @@
+//---- globals -----//
+@import "globals/typography";
+@import "globals/colors";
+
+//---- components ----//
+@import "components/cta";
+@import "components/footer";
+
+article:first-of-type {
+	@include card($highlight);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #2D5461;
+  font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;;
+}
+
+.cta-container {
+  margin: 1rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a.goth-link {
+  color: #3A612D;
+}
+
+a.goth-link:visited {
+  color: #D2F0FA;
+}
+
+a.goth-link:active, a.goth-link:focus, a.goth-link:hover {
+  text-shadow: 2px 2px 8px #FF0000;
+}
+
+.impact{text-align: center; font-weight: bold;}
+
+p.storybook::first-letter {
+  font-size: 200%;
+}
+
+.highlight-background {
+  background-color: #D2F0FA;
+}
+
+footer {
+  background-color: #D2F0FA;
+  padding: 1rem;
+}
+
+input[type="submit"] {
+  border-radius: .5rem;
+  color: white;
+  background-color: #3a612d;
+}
+h1, h2 {
+	font: $title-font;
+}
+
+h3, h4, h5, h6 {
+	font: $subtitle-font;
+}
